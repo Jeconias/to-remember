@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: app
+    build: .
+    ports:
+      - 1717:1717
+    volumes:
+      - ./src:/app/src
+      - ./logs:/app/logs
